@@ -1,0 +1,3 @@
+[submodule "src/osg"]
+	path = src/osg
+	url = https://github.com/rpavlik/osg.git
