@@ -10,8 +10,8 @@ OSG and its dependencies for building on Windows.
 - For dependencies that are common (zlib), all users must have been built against a compatible (hopefully identical) build.
 - Try to keep code compiled against the debug runtime and the standard runtime separate.
 
-### References
-- <http://www.mingw.org/wiki/MixingCompilers>
+- References:
+	- <http://www.mingw.org/wiki/MixingCompilers>
 
 
 ## Still needed:
@@ -36,6 +36,7 @@ These were observed in the current binaries we're using (32-bit, VC8). These are
 		- `"LegalCopyright", ""© 2005 Independent JPEG Group <www.ijg.org>"`
 
 - `libpng12.dll`
+	- Depends on `zlib`
 	- Current version is from [GnuWin32][], identified as follows in the properties:
 		- `"FileDescription", "Libpng12: PNG image compression library"`
 		- `"FileVersion", "1.2.37.3442"`
@@ -59,6 +60,7 @@ These were observed in the current binaries we're using (32-bit, VC8). These are
 
 - `libxml2.dll` ([libxml2][])
 	- No data in properties to identify the version currently in use.
+	- Using zlib 1.2.4 or later (important!) requires 2.7.7 or later.
 	- [Windows port and binaries available from Igor Zlatkovic][libxml2windows], but latest is libxml2-2.7.8, from June 19, 2011.
 	- Upstream is in GNOME Git: `git://git.gnome.org/libxml2` ([web view][libxml2git]) - Looks like we might want post-2.9.0 for Windows fixes.
 	- We only need libxml2 from the suite.
@@ -82,3 +84,6 @@ These were observed in the current binaries we're using (32-bit, VC8). These are
 [libxml2windows]:http://www.zlatkovic.com/libxml.en.html
 [libxml2git]:http://git.gnome.org/browse/libxml2/
 [zlib]:http://www.zlib.net
+
+## Wishlist
+- OpenVRML
