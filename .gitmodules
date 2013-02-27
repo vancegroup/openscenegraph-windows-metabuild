@@ -1,3 +1,6 @@
 [submodule "src/osg"]
 	path = src/osg
 	url = https://github.com/rpavlik/osg.git
+[submodule "src/libpng-12"]
+	path = src/libpng-12
+	url = git://git.code.sf.net/p/libpng/code
