@@ -7,3 +7,6 @@
 [submodule "src/libxml2"]
 	path = src/libxml2
 	url = git://git.gnome.org/libxml2
+[submodule "src/giflib-4.2"]
+	path = src/giflib-4.2
+	url = git://git.code.sf.net/p/giflib/code
