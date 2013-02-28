@@ -1,0 +1,3 @@
+ExternalProject_Add(zlib
+	URL ${CMAKE_CURRENT_SOURCE_DIR}/zlib
+	INSTALL_COMMAND
